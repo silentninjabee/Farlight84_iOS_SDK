@@ -9,3 +9,5 @@ Key Features:
 
 Dumping Method:
 The provided dump was created using a modified version of the iOS_UE4Dumper available at https://github.com/MJx0/iOS_UE4Dumper.
+
+Update: Fixed the ida_funcs.py script. Confirmed working with "IDA - The Interactive Disassembler (Version 7.0.170914 macOS x86_64)"

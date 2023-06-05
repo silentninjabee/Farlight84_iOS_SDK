@@ -1,18 +1,33 @@
 # -*- coding: utf-8 -*-
+import json
 import idaapi
 import idc
-from idaapi import SN_NOWARN, SN_NOCHECK
-import json
-
-path = idaapi.ask_file(False, '*.json', 'script.json')
-json_data = json.loads(open(path, 'rb').read().decode('utf-8'))
 
 imageBase = idaapi.get_imagebase()
 
-for func_entry in json_data['Functions']:
-    name = func_entry['Name']
-    addr = imageBase+func_entry['Address']
-    ret = idc.set_name(addr, name, SN_NOWARN | SN_NOCHECK)
+def get_addr(addr):
+    return imageBase + addr
+
+def set_name(addr, name):
+    ret = idc.set_name(addr, name, idc.SN_NOWARN | idc.SN_NOCHECK)
     if ret == 0:
-       new_name = name+'_'+str(addr)
-       ret = idc.set_name(addr, new_name, SN_NOWARN | SN_NOCHECK)
+        new_name = name + '_' + str(addr)
+        ret = idc.set_name(addr, new_name, idc.SN_NOWARN | idc.SN_NOCHECK)
+
+def make_function(start, end):
+    next_func = idc.get_next_func(start)
+    if next_func < end:
+        end = next_func
+    if idc.get_func_attr(start, idc.FUNCATTR_START) == start:
+        ida_funcs.del_func(start)
+    ida_funcs.add_func(start, end)
+
+path = idaapi.ask_file(False, '*.json', 'script.json')
+data = json.loads(open(path, 'rb').read().decode('utf-8'))
+
+for function in data["Functions"]:
+    addr = get_addr(function["Address"])
+    name = function["Name"].encode("utf-8")
+    set_name(addr, name)
+
+print('Script finished!')

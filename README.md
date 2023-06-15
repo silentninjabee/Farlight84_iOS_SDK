@@ -1,13 +1,17 @@
 # Farlight84_iOS_SDK
-The Farlight84 iOS SDK is a comprehensive dump of the Unreal Engine 4.25 game specifically designed for iOS 64-bit. The SDK corresponds to Game Version v1.14.3.1.401974.
 
-Important Note: Please be aware that not all Unreal Engine offsets have been fully determined, resulting in Class headers that require editing before they can be used.
+Farlight84 iOS SDK is a comprehensive dump of the Unreal Engine 4.25 game specifically designed for Apple iOS arm 64-bit. 
 
-Key Features:
+    Key Features:
+    'ida_funcs.py' Python Script: This SDK includes 'ida_funcs.py,' a Python script that facilitates the analysis of the SolarlandClient
+    executable in IDA. By utilizing the scripts.json file, this script imports function names and addresses into IDA, streamlining the
+    analysis process.
 
-'ida_funcs.py' Python Script: This SDK includes 'ida_funcs.py,' a Python script that facilitates the analysis of the SolarlandClient executable in IDA. By utilizing the scripts.json file, this script imports function names and addresses into IDA, streamlining the analysis process.
+    Dumping Method:
+    The provided dump was created using a modified version of the iOS_UE4Dumper available at https://github.com/MJx0/iOS_UE4Dumper.
 
-Dumping Method:
-The provided dump was created using a modified version of the iOS_UE4Dumper available at https://github.com/MJx0/iOS_UE4Dumper.
+    Update Log:
+    - 16/6/2023: New Version for iOS is being pushed out with Update to the Global Offsets
 
-Update: Fixed the ida_funcs.py script. Confirmed working with "IDA - The Interactive Disassembler (Version 7.0.170914 macOS x86_64)"
+    - 03/6/2023: Fixed the ida_funcs.py script. Confirmed working with "IDA - The Interactive Disassembler (Version 7.0.170914        
+    macOSx86_64)"

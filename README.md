@@ -1,4 +1,4 @@
-# Farlight84_iOS_SDK
+# Farlight84 iOS SDK
 Farlight 84 iOS SDK is a comprehensive dump of the Unreal Engine 4.25 game specifically designed for Apple iOS arm 64-bit. 
     
     // 27th July 2023 -  iOS 

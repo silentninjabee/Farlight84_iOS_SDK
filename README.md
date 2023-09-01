@@ -3,16 +3,16 @@ Farlight 84 iOS SDK is a comprehensive dump of the Unreal Engine v4.25 game, spe
 
 #### Global Offsets as of 1st September 2023 
 ```
-//Apple iOS Farlight 84 offset 
+// Apple iOS Farlight84 offset 
 
-GWorld 0x1072D8908
-NamePoolData 0x10700FF40
-ObjObjects 0x1072AD7E8
+#define GWorld 0x1072D8908
+#define NamePoolData 0x10700FF40
+#define ObjObjects 0x1072AD7E8
 
 ```
 
-## Key Features:
-**'ida_funcs.py'** Python Script: This SDK includes 'ida_funcs.py,' a Python script that facilitates the analysis of the SolarlandClient
+# Key Features:
+## 'ida_funcs.py' Python Script: This SDK includes 'ida_funcs.py,' a Python script that facilitates the analysis of the SolarlandClient
 executable in IDA. By utilizing the scripts.json file, this script imports function names and addresses into IDA, streamlining the
 analysis process.
 
@@ -22,11 +22,28 @@ analysis process.
 ##### After the Import of included Json
 ![Alt text](https://github.com/silentninjabee/Farlight84_iOS_SDK/blob/main/farlight_IdaAfterFunctionsImport.jpg "After Import Json Functions")
 
+# ZIP File Contents
+
+### headers_dump
+C++ headers that you can use in your source, however, the headers might not compile directly without a change
+
+### FullDump.hpp
+An all-in-one dump file
+
+### logs.txt
+Logfile containing dump process logs
+
+### objects_dump.txt
+ObjObjects dump
+
+### script.json
+If you are familiar with Il2cppDumper script.json, this is similar
+It contains a json array of function names and addresses
 
 ## Dumping Method:
 The provided dump was created using a modified version of the iOS_UE4Dumper available at https://github.com/MJx0/iOS_UE4Dumper.
 
-## Update Log:
+# Update Log:
 - 01/09/2023: Update to Global Offsets. New dump with the latest uploaded.
 - 27/08/2023: Update to Global Offsets. New Major game update. majority of internal offsets are the same. Updated new global offsets.
 - 15/08/2023: Update to Global offsets, most other offsets appear the same.

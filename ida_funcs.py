@@ -28,7 +28,7 @@ data = json.loads(open(path, 'rb').read().decode('utf-8'))
 
 for function in data["Functions"]:
     addr = get_addr(function["Address"])
-    name = function["Name"].encode("utf-8")
+    name = function["Name"]  # Don't encode to bytes
     set_name(addr, name)
 
 print('Script finished!')

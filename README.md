@@ -3,11 +3,12 @@ Farlight 84 iOS SDK is a comprehensive dump of the Unreal Engine v4.25 game, spe
 
 #### Global Offsets as of 1st September 2023 
 ```
-// Apple iOS Farlight84 offset 
 
-#define GWorld 0x1072D8908
-#define NamePoolData 0x10700FF40
-#define ObjObjects 0x1072AD7E8
+//3rd September 2023 Apple iOS Farlight84 Offsets
+#define GWORLD 0x1073375D8
+#define NAMEPOOOL 0x10700FF00
+#define UOBJECTARRAY 0x10724ECC8
+#define ProcessEvent 0x1032EB8FC
 
 ```
 
@@ -44,6 +45,7 @@ It contains a json array of function names and addresses
 The provided dump was created using a modified version of the iOS_UE4Dumper available at https://github.com/MJx0/iOS_UE4Dumper.
 
 # Update Log:
+- 03/09/2023: Update to Global Offsets. New dump with the latest uploaded, teamid offset changed
 - 01/09/2023: Update to Global Offsets. New dump with the latest uploaded.
 - 27/08/2023: Update to Global Offsets. New Major game update. majority of internal offsets are the same. Updated new global offsets.
 - 15/08/2023: Update to Global offsets, most other offsets appear the same.

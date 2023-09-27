@@ -1,4 +1,4 @@
-# This works for ida v7 import using File->open script command. Alternative you can copy and paste it into the output window
+# This works for ida v7 import using File->open script command. Alternatively you can copy and paste it into the output window
 # -*- coding: utf-8 -*-
 import json
 import idaapi

@@ -44,6 +44,7 @@ It contains a json array of function names and addresses
 The provided dump was created using a modified version of the iOS_UE4Dumper available at https://github.com/MJx0/iOS_UE4Dumper.
 
 # Update Log:
+- 10/11/2023: Major game Updated. v15.2.1 Update Global Offsets, 
 - 27/09/2023: New Season Game Update. v14.4.8. Update to Global Offsets and some minor offsets
 - 03/09/2023: Update to Global Offsets. New dump with the latest uploaded, teamID offset changed
 - 01/09/2023: Update to Global Offsets. New dump with the latest uploaded.

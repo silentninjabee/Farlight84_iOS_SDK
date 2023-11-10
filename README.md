@@ -1,13 +1,13 @@
 # Farlight84 iOS SDK
 Farlight 84 iOS SDK is a comprehensive dump of the Unreal Engine v4.25 game, specifically designed for Apple iOS ARM 64-bit.
 
-#### Global Offsets as of 27th September 2023 v14.4.8
+#### Global Offsets as of 10th November 2023 v15.1.2
 ```
 
-//27rth September 2023 Apple iOS Farlight 84 Offsets
-#define GWORLD 0x1073B1B58
-#define NAMEPOOL 0x107083800
-#define UOBJECTARRAY 0x107327D28
+// Apple iOS Arm64 - Farlight 84 global offsets
+0x1078E3E80 FNAMEPOOL
+0x107B86670 OBJECTS
+0x107C115A8 GWORLD
 
 ```
 

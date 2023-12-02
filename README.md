@@ -1,13 +1,17 @@
 # Farlight84 iOS SDK
 Farlight 84 iOS SDK is a comprehensive dump of the Unreal Engine v4.25 game, specifically designed for Apple iOS ARM 64-bit.
 
-#### Global Offsets as of 10th November 2023 v15.1.2
+#### Global Offsets as of 02nd December 2023 v15.1.6
 ```
-
-// Apple iOS Arm64 - Farlight 84 global offsets
-0x1078E3E80 FNAMEPOOL
-0x107B86670 OBJECTS
-0x107C115A8 GWORLD
+Apple iOS Arm64 - Farlight 84 global offsets
+Farlight 84 - Version 15.1.6
+==========================
+GWorld = 0x107C3A728
+ObjectArray = 0x107BAF7F0
+FNamePool = 0x1079C0440
+Uobject::ProcessEvent = 0x103A44AD4
+GEngine = 0x107C38F80
+Fname::Fname()= 0x1038E0FAC
 
 ```
 
@@ -44,17 +48,13 @@ It contains a json array of function names and addresses
 The provided dump was created using a modified version of the iOS_UE4Dumper available at https://github.com/MJx0/iOS_UE4Dumper.
 
 # Update Log:
+- 02/12/2023: Update new season. v15.6.2 update.
 - 10/11/2023: Major game Updated. v15.2.1 Update Global Offsets, 
 - 27/09/2023: New Season Game Update. v14.4.8. Update to Global Offsets and some minor offsets
 - 03/09/2023: Update to Global Offsets. New dump with the latest uploaded, teamID offset changed
 - 01/09/2023: Update to Global Offsets. New dump with the latest uploaded.
 - 27/08/2023: Update to Global Offsets. New Major game update. majority of internal offsets are the same. Updated new global offsets.
-- 15/08/2023: Update to Global offsets, most other offsets appear the same.
-              : Uploaded a new SDK dump anyway.
-              : Included python IDA scri[t to import the script.json symbols for IDA v7.7
+- 15/08/2023: Included python IDA scri[t to import the script.json symbols for IDA v7.7 (python3)
 - 27/7/2023: Major game update. Team information has been moved into a new class.
-
 - 16/6/2023: New Version for iOS is being pushed out with Update to the Global Offsets
-
-- 03/6/2023: Fixed the ida_funcs.py script. Confirmed working with "IDA - The Interactive Disassembler (Version 7.0.170914        
-macOSx86_64)"
+- 03/6/2023: Fixed the ida_funcs.py script. Confirmed working with "IDA - The Interactive Disassembler (Version 7.0.170914 macOSx86_64)"

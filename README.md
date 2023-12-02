@@ -45,7 +45,9 @@ If you are familiar with Il2cppDumper script.json, this is similar
 It contains a json array of function names and addresses
 
 ## Dumping Method:
-The provided dump was created using a modified version of the iOS_UE4Dumper available at https://github.com/MJx0/iOS_UE4Dumper.
+The provided dump was created using a modified version of the iOS_UE4Dumper available at https://github.com/MJx0/iOS_UE4Dumper
+
+## For Steam and Windows Offsets check out: https://github.com/Fer3on07/Farlight84-SDK
 
 # Update Log:
 - 02/12/2023: Update new season. v15.6.2 update.

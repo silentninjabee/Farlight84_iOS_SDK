@@ -47,6 +47,7 @@ The provided dump was created using a modified version of the iOS_UE4Dumper avai
 ## For Steam and Windows Offsets check out: https://github.com/Fer3on07/Farlight84-SDK
 
 # Update Log:
+- 26/01/2024: Major Game Update to v2.0.0. New classes new content. Still looking through IDA for global pointers however I uploaded SDK
 - 29/12/2023: Update new season. v15.1.9 update.
 - 02/12/2023: Update new season. v15.6.2 update.
 - 10/11/2023: Major game Updated. v15.2.1 Update Global Offsets, 

@@ -4,11 +4,16 @@ Farlight 84 iOS SDK is a comprehensive dump of the Unreal Engine v4.25 game, spe
 #### Global Offsets as of 26 January 2024 v 842.0.0
 ```
 Apple iOS Arm64 - Farlight 84 global offsets
+
 Farlight 84 - Version 842.0.0
 ==========================
-    #define GWORLD 
-    #define NAMEPOOL 0x10C5F8A3F
-    #define GENGINE 
+
+OBJOBJECTS: 0x107FA91B0 
+NAMEPOOL: 0X107DBCA40
+GENGINE: 0X108028A00
+GWORLD: 0x10802A1C8
+
+
 
 ```
 

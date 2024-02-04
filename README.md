@@ -8,7 +8,7 @@ Apple iOS Arm64 - Farlight 84 global offsets
 Farlight 84 - Version 842.0.0
 ==========================
 
-OBJOBJECTS: 0x107FA91B0 
+OBJOBJECTS: 0x107FA91A8
 NAMEPOOL: 0X107DBCA40
 GENGINE: 0X108028A00
 GWORLD: 0x10802A1C8

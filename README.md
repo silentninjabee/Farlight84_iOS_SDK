@@ -30,16 +30,16 @@ analysis process.
 
 # ZIP File Contents
 
-### headers_dump
-C++ headers that you can use in your source, however, the headers might not compile directly without a change
+### Headers[folder]
+C++ headers that you can use in your source, however, the headers might not compile directly without modification
 
-### FullDump.hpp
+### AIOHeader.hpp
 An all-in-one dump file
 
 ### logs.txt
-Logfile containing dump process logs
+Logfile containing dump process logs and global offset info
 
-### objects_dump.txt
+### ObjectsDump.txt
 ObjObjects dump
 
 ### script.json
@@ -52,7 +52,7 @@ The provided dump was created using a modified version of the iOS_UE4Dumper avai
 ## For Steam and Windows Offsets check out: https://github.com/Fer3on07/Farlight84-SDK
 
 # Update Log:
-- 08/01/2024: Minor game update v.2.0.1. New dump and global offsets have been updated.
+- 08/02/2024: Minor game update v.2.0.1. New dump and global offsets have been updated.
 - 26/01/2024: Major Game Update to v2.0.0. New classes new content. Still looking through IDA for global pointers however I uploaded SDK
 - 29/12/2023: Update new season. v15.1.9 update.
 - 02/12/2023: Update new season. v15.6.2 update.
@@ -63,5 +63,5 @@ The provided dump was created using a modified version of the iOS_UE4Dumper avai
 - 27/08/2023: Update to Global Offsets. New Major game update. majority of internal offsets are the same. Updated new global offsets.
 - 15/08/2023: Included python IDA scri[t to import the script.json symbols for IDA v7.7 (python3)
 - 27/7/2023: Major game update. Team information has been moved into a new class.
-- 16/6/2023: New Version for iOS is being pushed out with Update to the Global Offsets
+- 16/6/2023: A New Version for iOS is being pushed out with an Update to the Global Offsets
 - 03/6/2023: Fixed the ida_funcs.py script. Confirmed working with "IDA - The Interactive Disassembler (Version 7.0.170914 macOSx86_64)"

@@ -44,12 +44,6 @@ The dump included in this SDK was generated using a modified version of the iOS_
 ## Additional Resources
 For SDK information pertaining to Steam and Windows platforms, please visit:
 [GitHub - Farlight84 SDK for Steam and Windows](https://github.com/Fer3on07/Farlight84-SDK)
-
-
-
-
-
-
                     __      __        __     =--------=    __        __        __                     
                    /_/\    /_/\      /\_\                 /_/\      /\_\      /\_\                    
                    ) ) )   ) ) )    / ( (                 ) ) \    ( ( (     ( ( (                    

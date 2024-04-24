@@ -1,55 +1,66 @@
 # Farlight84 iOS SDK
-Farlight 84 iOS SDK is a comprehensive dump of the Unreal Engine v4.25 game, specifically designed for Apple iOS ARM 64-bit.
 
-#### Global Offsets as of 24 APRIL 2024
-```
-Apple iOS Arm64 - Farlight 84 global offsets
+The Farlight84 iOS SDK is a comprehensive package designed for the Unreal Engine v4.25, optimized for Apple iOS ARM 64-bit platforms. This SDK provides critical tools and resources tailored for developers working with Farlight84 on iOS devices.
 
-Farlight 84 - Version 2.2
-==========================
+## Global Offsets (as of 24 April 2024)
+**Apple iOS ARM64 - Farlight 84 Global Offsets**
 
-#define GWORLD 0x10856fc18
-#define FNAMEPOOL 0x10830e3c0
-#define OBJOBJECTS 0x1084f6cd8
+**Farlight 84 - Version 2.2**
+- `#define GWORLD 0x10856fc18`
+- `#define FNAMEPOOL 0x10830e3c0`
+- `#define OBJOBJECTS 0x1084f6cd8`
+
+## Key Features
+
+### IDA Functions Python Script
+Included in this SDK is the `ida_funcs.py`, a Python script that enhances the analysis of the SolarlandClient executable in IDA. By leveraging the `scripts.json` file, this script simplifies the importing of function names and addresses into IDA, thereby streamlining your analysis efforts.
+
+#### Visual Guide to Importing UFunctions Using `ida_funcs.py`
+- **Before Importing the Included JSON**
+  - Alt text
+- **After Importing the Included JSON**
+  - Alt text
+
+## ZIP File Contents
+
+### Headers [folder]
+Contains C++ headers Group by UE Reflection System Types, split into seperate .h files for Enums, Classes, and Structs. Note: These headers may require modifications to compile successfully.
+
+- `AIOHeader.hpp`: An all-in-one header file encapsulating the entire dump.
+
+### Log Files
+- `logs.txt`: Log file containing details of the dump process and global offset information.
+
+### Object Dumps
+- `ObjectsDump.txt`: Dump of ObjObjects.
+
+### JSON Script
+- `script.json`: This file contains a JSON array detailing UFunction's that get called by the game logic typically marked as "Exec", there names and inheritance, and addresses. This is for importing this usefull infomation into IDA Pro, or Ghidra for static analysis of the games executable Macho file.
+
+## Dumping Method
+The dump included in this SDK was generated using a modified version of the iOS_UE4Dumper. For more information and access to the tool, visit:
+[GitHub - iOS_UE4Dumper](https://github.com/MJx0/iOS_UE4Dumper)
+
+## Additional Resources
+For SDK information pertaining to Steam and Windows platforms, please visit:
+[GitHub - Farlight84 SDK for Steam and Windows](https://github.com/Fer3on07/Farlight84-SDK)
 
 
-```
 
-# Key Features:
-## 'ida_funcs.py' Python Script: This SDK includes 'ida_funcs.py,' a Python script that facilitates the analysis of the SolarlandClient
-executable in IDA. By utilizing the scripts.json file, this script imports function names and addresses into IDA, streamlining the
-analysis process.
 
-##### Before the Import of included Json
-![Alt text](https://github.com/silentninjabee/Farlight84_iOS_SDK/blob/main/farlight_IdaBeforeFunctionsImport.jpg "Before Import Json Functions")
 
-##### After the Import of included Json
-![Alt text](https://github.com/silentninjabee/Farlight84_iOS_SDK/blob/main/farlight_IdaAfterFunctionsImport.jpg "After Import Json Functions")
 
-# ZIP File Contents
+                    __      __        __     =--------=    __        __        __                     
+                   /_/\    /_/\      /\_\                 /_/\      /\_\      /\_\                    
+                   ) ) )   ) ) )    / ( (                 ) ) \    ( ( (     ( ( (                    
+                  /_/ /   /_/ /    /   \_\               /_/   \    \ \_\     \ \_\                   
+ _    _    _      ) ) )   ) ) )    \   / /               \ \   /    ( ( (     ( ( (     _    _    _   
+/_/\ /_/\ /_/\   / / /   / / /      \ (_(                 )_) /      \ \ \     \ \ \   /_/\ /_/\ /_/\ 
+\_\/ \_\/ \_\/   \/_/    \/_/        \/_/                 \_\/        \_\/      \_\/   \_\/ \_\/ \_\/ 
+                                                                                                      
 
-### Headers[folder]
-C++ headers that you can use in your source, however, the headers might not compile directly without modification
 
-### AIOHeader.hpp
-An all-in-one dump file
-
-### logs.txt
-Logfile containing dump process logs and global offset info
-
-### ObjectsDump.txt
-ObjObjects dump
-
-### script.json
-If you are familiar with Il2cppDumper script.json, this is similar
-It contains a json array of function names and addresses
-
-## Dumping Method:
-The provided dump was created using a modified version of the iOS_UE4Dumper available at https://github.com/MJx0/iOS_UE4Dumper
-
-## For Steam and Windows Offsets check out: https://github.com/Fer3on07/Farlight84-SDK
-
-# Update Log*:
+### Update Log*:
 * dd/mm/yyyy for you confused Americans
 
 - 24/04/2024: Major game update v.2.2.o. New full sdk dump and global offsets updated.

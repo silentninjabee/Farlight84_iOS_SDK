@@ -1,4 +1,3 @@
-# This works for ida v7 import using File->open script command. Alternatively you can copy and paste it into the output window
 # -*- coding: utf-8 -*-
 import json
 import idaapi
@@ -32,3 +31,5 @@ for function in data["Functions"]:
     set_name(addr, name)
 
 print('Script finished!')
+
+# This works for ida v7 import using File->open script command and uses Python2

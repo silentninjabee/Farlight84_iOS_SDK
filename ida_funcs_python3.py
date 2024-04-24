@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# IDA Pro version 7.7
 import json
 import idaapi
 import idc
@@ -32,3 +31,5 @@ for function in data["Functions"]:
     set_name(addr, name)
 
 print('Script finished!')
+
+# IDA Pro Python3 compatabile

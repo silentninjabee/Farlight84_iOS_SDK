@@ -9,8 +9,8 @@ The Farlight84 iOS SDK is a comprehensive package designed for the Unreal Engine
 **Farlight 84 **
 GWORLD = 0x1085742D8;
 GENGINE = 0x108572B10; 
-FNAMEPOOL = 0x10830e3c0;
-OBJOBJECTS = 0x1084f6cd8;
+FNAMEPOOL = 0x108312a80;
+OBJOBJECTS = 0x1084fb398;
 
 
 ProcessEvent_VtableIndex = 42;

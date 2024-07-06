@@ -18,7 +18,9 @@ OBJOBJECTS = 0x1080c1578;
 Included in this SDK is a Python script that enhances the decompilation and analysis of the games executable in Ghidra or IDA Pro. These python scripts leverage the `scripts.json` file included in the zipped package, simplifying the importing of function names and addresses into IDA or Ghidra, greatly streamlining your analysis efforts.
 
 ghidra_funcs.py = support all current versions of Ghidra
+
 ida_funcs.py = IDA v7.2 and lower (python2 script)
+
 ida_funcs_python3.py = IDA v7.2+ (python3 script)
 
 #### Visual Guide to Importing UFunctions Using `ida_funcs.py`

@@ -14,8 +14,12 @@ OBJOBJECTS = 0x1080c1578;
 
 ## Key Features
 
-### IDA Functions Python Script
-Included in this SDK is the `ida_funcs.py`, a Python script that enhances the analysis of the SolarlandClient executable in IDA. By leveraging the `scripts.json` file, this script simplifies the importing of function names and addresses into IDA, thereby streamlining your analysis efforts.
+### IDA/Ghidra Function Naming Python Script
+Included in this SDK is a Python script that enhances the decompilation and analysis of the games executable in Ghidra or IDA Pro. These python scripts leverage the `scripts.json` file included in the zipped package, simplifying the importing of function names and addresses into IDA or Ghidra, greatly streamlining your analysis efforts.
+
+ghidra_funcs.py = support all current versions of Ghidra
+ida_funcs.py = IDA v7.2 and lower (python2 script)
+ida_funcs_python3.py = IDA v7.2+ (python3 script)
 
 #### Visual Guide to Importing UFunctions Using `ida_funcs.py`
 - **Before Importing the Included JSON**

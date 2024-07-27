@@ -31,9 +31,9 @@ ida_funcs_python3.py = IDA v7.2+ (python3 script)
 
 #### Visual Guide to Importing UFunctions Using `ida_funcs.py`
 - **Before Importing the Included JSON**
-  - Alt text
+  - ![Before Loading Dump Script](https://github.com/silentninjabee/Farlight84_iOS_SDK/blob/main/farlight_IdaBeforeFunctionsImport.jpg)
 - **After Importing the Included JSON**
-  - Alt text
+  - ![After Loading Dump Script](https://github.com/silentninjabee/Farlight84_iOS_SDK/blob/main/farlight_IdaAfterFunctionsImport.jpg)
 
 ## ZIP File Contents
 

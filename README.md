@@ -3,19 +3,19 @@
 The Farlight 84 iOS SDK is a comprehensive package designed for the game built on the Unreal Engine v4.25 for Apple iOS ARM-64 platform. 
 This SDK provides critical tools and resources tailored for developers working with Farlight84 on iOS devices.
 
-## Global Offsets (as of 26th July 2024)
+## Global Offsets (as of 18th September 2024)
 **Apple iOS ARM64 - Farlight 84 Global Offsets**
 
-```
-const long GWORLD = 0x107DC4BF8;
-const long FNAMEPOOL = 0x107bb6400;
-const long OBJECTARRAY = 0x107d4bd50;
- 
- // Example for memory aimbot with the offset needed for get/set player look at angle
- 
-const long myLookAtOffset = 0x2B0C;
- 
-FRotator currentLookAtAngle = Read<FRotator>(PlayerCameraManager + myLookAtOffset);
+```cpp
+/* 
+ - For Hi Buddy update the standard ue4.25 WorldToScreen function is not working */
+
+*/
+
+const long GWORLD = 0x1083A4078;
+const long NAMEPOOL = 0x108194880;
+const long GUOBJECTARRAY = 0x10832aca0;
+
 ```
 
 ## Key Features
@@ -73,20 +73,22 @@ For SDK information pertaining to Steam and Windows platforms, please visit:
 
 ### Update Log*: 
  {dd/mm/yyyy}:
-- 26/07/2024: Major Game update updated global offsets and new dump zip file.
-- 07/07/2024: Major Game update v2.3.4. Updated global offsets and new dump zip file.
-- 17/05/2024: Minor update v.2.2.1. New dump, global offsets, and some helpfull functions not found in the SDK provided.
-- 24/04/2024: Major game update v.2.2.o. New full sdk dump and global offsets updated.
-- 08/02/2024: Minor game update v.2.0.1. New dump and global offsets have been updated.
-- 26/01/2024: Major Game Update to v2.0.0. New classes new content. Still looking through IDA for global pointers however I uploaded SDK
+- 16/09/2023 Major game update to "HiBUddy". Updated global offsets and new dump zip file.
+  * Included new Farlight.hpp GameProfile for [GitHub - iOS_UE4Dumper](https://github.com/MJx0/iOS_UE4Dumper)
+- 26/07/2024: Major game update. Updated global offsets and new dump zip file.
+- 07/07/2024: Major game update v2.3.4 - Updated global offsets and new dump zip file.
+- 17/05/2024: Minor update v.2.2.1.
+- 24/04/2024: Major game update v.2.2.o. Updated global offsets and new dump zip file.
+- 08/02/2024: Minor game update v.2.0.1. Updated global offsets and new dump zip file.
+- 26/01/2024: Major game Update to v2.0.0.Updated global offsets and new dump zip file.
 - 29/12/2023: Update new season. v15.1.9 update.
 - 02/12/2023: Update new season. v15.6.2 update.
-- 10/11/2023: Major game Updated. v15.2.1 Update Global Offsets, 
-- 27/09/2023: New Season Game Update. v14.4.8. Update to Global Offsets and some minor offsets
-- 03/09/2023: Update to Global Offsets. New dump with the latest uploaded, teamID offset changed
-- 01/09/2023: Update to Global Offsets. New dump with the latest uploaded.
-- 27/08/2023: Update to Global Offsets. New Major game update. majority of internal offsets are the same. Updated new global offsets.
-- 15/08/2023: Included python IDA scri[t to import the script.json symbols for IDA v7.7 (python3)
+- 10/11/2023: Major game Updated. v15.2.1 Updated global offsets and new dump zip file.
+- 27/09/2023: New Season Game Update. v14.4.8. Updated global offsets and new dump zip file.
+- 03/09/2023: Updated global offsets and new dump zip file.
+- 01/09/2023: Updated global offsets and new dump zip file.
+- 27/08/2023: Updated global offsets and new dump zip file. Included python IDA script "ida_funcs_python3.py" for IDA > v7.0 (python3) 
+- 15/08/2023: Included python IDA script "ida_funcs.py" to import the script.json function symbols into IDA < v7.0 (python2)
 - 27/7/2023: Major game update. Team information has been moved into a new class.
 - 16/6/2023: A New Version for iOS is being pushed out with an Update to the Global Offsets
 - 03/6/2023: Fixed the ida_funcs.py script. Confirmed working with "IDA - The Interactive Disassembler (Version 7.0.170914 macOSx86_64)"

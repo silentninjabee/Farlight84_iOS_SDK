@@ -1,5 +1,5 @@
 // Updated by Silentninjabee
-// Farlight 84 version 26 July 2024 (There version system is whack, idk what there official version is)
+// Farlight 84 HiBuddy version 16 September 2024
 
 #pragma once
 
@@ -63,9 +63,10 @@ public:
     }
 
     uintptr_t GetNamesPtr() const override
-    {       
-        std::string ida_pattern = "08 7C 40 92 89 EA ? ? ? ? ? ? 28 21 08 8B 08 41";
-        const int step = 4;
+    {
+        // FNameEntry const* FName::GetEntry(FNameEntryId id);
+        std::string ida_pattern = "F6 57 BD A9 F4 4F 01 A9 FD 7B 02 A9 FD 83 00 91 F3 03 00 AA ? ? ? ? A8 02 ? 39";
+        const int step = 0x1C;
         
         auto text_seg = GetExecutableInfo().getSegment("__TEXT");
         

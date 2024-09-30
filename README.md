@@ -8,13 +8,16 @@ This SDK provides critical tools and resources tailored for developers working w
 
 ```cpp
 /* 
- - For Hi Buddy update the standard ue4.25 WorldToScreen function is not working */
+iOS current version globals as of 30 September 2024
 
 */
 
-const long GWORLD = 0x1083A4078;
-const long NAMEPOOL = 0x108194880;
-const long GUOBJECTARRAY = 0x10832aca0;
+iOS current version globals
+
+const long GWORLD = 0x10839C1F8;
+const long FNAMEPOOL = 0x10818ca00;
+const long GUOBJECTARRAY = 0x108322e20;
+
 
 ```
 
@@ -73,7 +76,8 @@ For SDK information pertaining to Steam and Windows platforms, please visit:
 
 ### Update Log*: 
  {dd/mm/yyyy}:
-- 16/09/2023 Major game update to "HiBUddy". Updated global offsets and new dump zip file.
+- 30/09/2024 Minor update to the global offsets, the SDK appears to be the same.
+- 16/09/2024 Major game update to "HiBUddy". Updated global offsets and new dump zip file.
   * Included new Farlight.hpp GameProfile for [GitHub - iOS_UE4Dumper](https://github.com/MJx0/iOS_UE4Dumper)
 - 26/07/2024: Major game update. Updated global offsets and new dump zip file.
 - 07/07/2024: Major game update v2.3.4 - Updated global offsets and new dump zip file.
